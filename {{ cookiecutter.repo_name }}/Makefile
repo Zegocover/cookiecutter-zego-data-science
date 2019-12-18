@@ -8,17 +8,18 @@ PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 BUCKET = {{ cookiecutter.s3_bucket }}
 PROFILE = {{ cookiecutter.aws_profile }}
 PROJECT_NAME = {{ cookiecutter.repo_name }}
-PYTHON_INTERPRETER = {{ cookiecutter.python_interpreter }}
-
-ifeq (,$(shell which conda))
-HAS_CONDA=False
-else
-HAS_CONDA=True
-endif
+PYTHON_INTERPRETER = python
 
 #################################################################################
 # COMMANDS                                                                      #
 #################################################################################
+
+## Set up environment if needed
+setup:
+	pipenv install
+	git init
+	dvc init
+
 
 ## Install Python Dependencies
 requirements: test_environment
@@ -36,7 +37,7 @@ clean:
 
 ## Lint using flake8
 lint:
-	flake8 src
+	black src
 
 ## Upload Data to S3
 sync_data_to_s3:

@@ -26,7 +26,7 @@ $ conda install cookiecutter
 ### To start a new project, run:
 ------------
 
-    cookiecutter https://github.com/drivendata/cookiecutter-data-science
+    cookiecutter https://github.com/zegocover/cookiecutter-zego-data-science
 
 
 [![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
@@ -36,6 +36,8 @@ $ conda install cookiecutter
 ------------
 
 The directory structure of your new project looks like this: 
+
+> TODO Update!
 
 ```
 ├── LICENSE
@@ -82,17 +84,3 @@ The directory structure of your new project looks like this:
 │
 └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 ```
-
-## Contributing
-
-We welcome contributions! [See the docs for guidelines](https://drivendata.github.io/cookiecutter-data-science/#contributing).
-
-### Installing development requirements
-------------
-
-    pip install -r requirements.txt
-
-### Running the tests
-------------
-
-    py.test tests
