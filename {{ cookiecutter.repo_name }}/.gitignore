@@ -1,3 +1,7 @@
+# Large data files and model files shouldn't be kept in git
+data/
+models/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -87,3 +91,4 @@ target/
 
 # Mypy cache
 .mypy_cache/
+/data
