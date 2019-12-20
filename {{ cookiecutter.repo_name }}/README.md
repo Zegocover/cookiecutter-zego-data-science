@@ -6,7 +6,6 @@
 Project Organization
 ------------
 
-    ├── LICENSE
     ├── Makefile           <- Makefile with commands 
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
@@ -19,9 +18,9 @@ Project Organization
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    ├── notebooks          <- Jupyter notebooks. Naming convention is (separated by '_') a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    │                         `1.0_jqp_initial-data-exploration`.
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
@@ -46,6 +45,6 @@ Project Organization
         │   └── train_model.py
         │
         └── visualization  <- Scripts to create exploratory and results oriented visualizations
-           └── visualize.py
+            └── visualize.py
 
 --------
