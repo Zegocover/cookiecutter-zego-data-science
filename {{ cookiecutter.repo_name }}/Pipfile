@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+awscli = "*"
+pandas = "*"
+scikit-learn = "*"
+python-dotenv = "*"
+black = "==19.10b0"
+dvc = {extras = ["s3"],version = "*"}
+click = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
