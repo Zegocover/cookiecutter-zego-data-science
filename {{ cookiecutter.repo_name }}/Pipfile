@@ -7,6 +7,7 @@ verify_ssl = true
 
 [packages]
 awscli = "*"
+aws-google-auth = "*"
 pandas = "*"
 scikit-learn = "*"
 python-dotenv = "*"

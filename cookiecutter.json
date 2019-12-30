@@ -3,6 +3,6 @@
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "author_name": "Your Name",
     "description": "A short description of the project goals.",
-    "s3_bucket": "zego-ds-store/{{ cookiecutter.repo_name }}",
-    "aws_profile": "zego-datascience"
+    "s3_bucket": "zego-ds-store/projects/{{ cookiecutter.repo_name }}",
+    "aws_profile": "zego-datascience-data"
 }
