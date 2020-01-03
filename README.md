@@ -44,6 +44,8 @@ The directory structure of your new project looks like this:
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
+    ├── dvc                <- Contains dvc files specifying pipeline steps
+    │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is (separated by '_') a number (for ordering),

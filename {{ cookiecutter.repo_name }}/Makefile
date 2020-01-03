@@ -19,11 +19,11 @@ clean:
 	find . -type f -name "*.py[co]" -delete
 	find . -type d -name "__pycache__" -delete
 
-## Lint using flake8
+## Lint using black
 lint:
 	black src
 
-## Upload Data to S3
+## Upload Data to S3 - use dvc instead!
 sync_data_to_s3:
 ifeq (${AWS_PROFILE},$(PROFILE))
 	aws s3 sync data/ s3://$(BUCKET)/data/
@@ -31,7 +31,7 @@ else
 	aws s3 sync data/ s3://$(BUCKET)/data/ --profile $(PROFILE)
 endif
 
-## Download Data from S3
+## Download Data from S3 - use dvc instead
 sync_data_from_s3:
 ifeq (${AWS_PROFILE},$(PROFILE))
 	aws s3 sync s3://$(BUCKET)/data/ data/
