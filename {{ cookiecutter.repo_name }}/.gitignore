@@ -92,3 +92,6 @@ target/
 # Mypy cache
 .mypy_cache/
 /data
+
+# File created by make setup, recording the time the repo was set up.
+setup

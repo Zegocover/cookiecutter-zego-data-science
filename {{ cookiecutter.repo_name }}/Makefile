@@ -1,4 +1,4 @@
-.PHONY: clean lint sync_data_to_s3 sync_data_from_s3
+.PHONY: clean lint remove sync_data_to_s3 sync_data_from_s3
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -22,6 +22,12 @@ clean:
 ## Lint using black
 lint:
 	black src
+
+## Clean up and remove local repo, careful with this one!
+remove:
+	git diff-index --quiet HEAD 
+	dvc push
+	cd ..; rm -rf {{ cookiecutter.repo_name }}
 
 ## Upload Data to S3 - use dvc instead!
 sync_data_to_s3:

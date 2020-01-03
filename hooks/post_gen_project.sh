@@ -1,5 +1,8 @@
 #!/bin/sh
 
+pipenv install
+#python -m ipykernel install --user --name={{ cookiecutter.repo_name }}
+
 git init
 git add .
 git commit -m "Initial commit"

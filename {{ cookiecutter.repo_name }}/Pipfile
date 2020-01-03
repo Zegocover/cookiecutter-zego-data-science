@@ -8,15 +8,16 @@ verify_ssl = true
 [packages]
 awscli = "*"
 aws-google-auth = "*"
-pandas = "*"
-scikit-learn = "*"
-python-dotenv = "*"
 black = "==19.10b0"
-dvc = {extras = ["s3"],version = "*"}
 click = "*"
+dvc = {extras = ["s3"],version = "*"}
+ipykernel = "*"
+pandas = "*"
+python-dotenv = "*"
+scikit-learn = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.7.5"
 
 [pipenv]
 allow_prereleases = true

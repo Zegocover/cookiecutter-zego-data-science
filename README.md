@@ -11,6 +11,7 @@ _A logical, reasonably standardized, but flexible project structure for doing an
  - pyenv - manage python versions
  - pipenv - manage python dependencies
  - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0
+ - dvc - data version control and s3 syncing
 
 To install on mac you can use homebrew:
 
@@ -19,6 +20,7 @@ $ brew upgrade
 $ brew install pyenv
 $ brew install pipenv
 $ pip install cookiecutter
+$ pip install dvc
 ```
 
 
